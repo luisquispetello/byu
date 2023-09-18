@@ -166,3 +166,8 @@ nav a:hover {
   border-right: 1px solid;
 }
 /* Ask AI to edit or generate... */
+
+.logo {
+  width: 200px;
+  height: 100px;
+}
