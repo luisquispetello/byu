@@ -1,0 +1,167 @@
+/* variable colors */
+:root {
+  --color-primary: #003844;
+  --color-secondary: #006C67;
+  --color-accent: #FFB100;
+  --color-background: #F194B4;
+}
+
+/* general styles */
+body {
+  font-family: 'Grotesk Space', sans-serif;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+
+a {
+  color: var(--color-secondary);
+  text-decoration: none;
+
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Header styles */
+header {
+  background-color: var(--color-accent);
+  padding: 20px 0;
+}
+
+#logo_link {
+  text-decoration: none;
+}
+
+.logo {
+  max-width: 80px;
+}
+
+nav {
+  margin-top: 10px;
+  text-decoration: none;
+
+}
+
+nav a {
+  color: var(--color-primary);
+  margin-right: 20px;
+}
+
+/* Hero styles */
+#hero {
+  background-color: var(--color-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+
+#hero-img {
+  max-width: 100%;
+}
+
+#hero-msg {
+  text-align: center;
+}
+
+.home-title {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.button-box {
+  margin-top: 20px;
+}
+
+.book {
+  background-color: var(--color-primary);
+  color: var(--color-accent);
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Cards styles*/
+.cards {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.card {
+  background-color: var(--color-accent);
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.card-img {
+  max-width: 100%;
+}
+
+.icon {
+  max-width: 50px;
+  margin: 10px auto;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+/* newsletter styles */
+.newsletter {
+  background-image: url('images/mountains.jpg');
+  background-size: cover;
+  text-align: center;
+  padding: 40px 0;
+  color: var(--color-primary);
+}
+
+.msg {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.join {
+  background-color: var(--color-secondary);
+  color: var(--color-accent);
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Footer style */
+footer {
+  background-color: var(--color-primary);
+  padding: 20px 0;
+  color: var(--color-accent);
+  text-align: center;
+
+}
+
+footer p a:hover {
+  text-decoration: underline;
+}  
+
+.social {
+  margin-top: 10px;
+}
+
+.social a {
+  margin: 0 10px;
+}
+
+.social img {
+  max-width: 30px;
+}
