@@ -18,15 +18,15 @@ Fonts are separated by a & */
   --paragraph-font: 'Supreme', sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #003844;  /* headlines on a white background */ 
+  --headline-color-on-white: #523F38;  /* headlines on a white background */ 
   --headline-color-on-color: white; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #003844; /* paragraph text on a white background */ 
+  --paragraph-color-on-white: #523F38; /* paragraph text on a white background */ 
   --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #003844  ;
-  --nav-link-color: #003844;
+  --paragraph-background-color: #523F38  ;
+  --nav-link-color: #523F38;
   --nav-background-color: #1EA896;
   --nav-hover-link-color: white;
-  --nav-hover-background-color: #003844;
+  --nav-hover-background-color: #523F38;
 }
 
 
