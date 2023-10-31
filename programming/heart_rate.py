@@ -56,6 +56,7 @@ def populate_main_window(frm_main):
     # Create a label that displays "years"
     lbl_age_units = Label(frm_main, text="years")
 
+    ######
     # Create a label that displays "Rates:"
     lbl_rates = Label(frm_main, text="Rates:")
 

@@ -8,25 +8,25 @@ Fonts are separated by a & */
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #003844   ;
-  --secondary-color: #006C67 ;
-  --accent1-color: #FFB100;
-  --accent2-color: #F194B4;
+  --primary-color: #000   ;
+  --secondary-color: white ;
+  --accent1-color: #CEE5F7;
+  --accent2-color: #9cf194;
 
   /* change the values below to your chosen font(s) */
   --heading-font: 'Space Grotesk', sans-serif;
   --paragraph-font: 'Space Grotesk', sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #003844;  /* headlines on a white background */ 
+  --headline-color-on-white: #000;  /* headlines on a white background */ 
   --headline-color-on-color: white; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #003844; /* paragraph text on a white background */ 
+  --paragraph-color-on-white: #000; /* paragraph text on a white background */ 
   --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #003844  ;
-  --nav-link-color: #003844;
-  --nav-background-color: #FFB100;
+  --paragraph-background-color: #000  ;
+  --nav-link-color: #000;
+  --nav-background-color: transparent;
   --nav-hover-link-color: white;
-  --nav-hover-background-color: #003844;
+  --nav-hover-background-color: #000;
 }
 
 
@@ -104,6 +104,7 @@ nav {
   line-height: 3em;
   text-align: center;
   font-size: 1.2em;
+  font-family: var(--heading-font);
 }
 nav  {
   list-style-type: none;
@@ -170,4 +171,10 @@ nav a:hover {
 .logo {
   width: 200px;
   height: 100px;
+}
+
+.wireframes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
 }

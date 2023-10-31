@@ -4,7 +4,6 @@
   --accent1-color: #b24300;
   --accent2-color: #ffb100;
 
-  /* change the values below to your chosen font(s) */
   --heading-font: Inter, Impact, "Arial Narrow Bold", sans-serif;
   --paragraph-font: Inter, Impact, "Arial Narrow Bold", sans-serif;
 
@@ -102,10 +101,6 @@ a:hover {
   margin-bottom: .5rem;
 }
 
-.icon {
-  padding: 0.625rem 0.8125rem 0.625rem 1.25rem;
-}
-
 .button {
   font-weight: 700;
   display: flex;
@@ -115,17 +110,17 @@ a:hover {
   width: fit-content;
 
   border-radius: 0.5rem;
-  border: 1px solid var(--background-dark);
+  outline: 1px solid var(--background-dark);
   color: var(--background-dark);
 }
 
 .button--tertiary {
-  border: none;
+  outline: none;
   color: var(--accent1-color);
 }
 
 .button--secondary {
-  border: 1px solid var(--accent1-color);
+  outline: 1px solid var(--accent1-color);
   color: var(--accent1-color);
 }
 .container {
@@ -172,6 +167,11 @@ a:hover {
   color: #666;
 }
 
+.nav-secondary ul :nth-child(1){
+  display: flex;
+  align-items: center;
+  padding-right: 0.5rem;
+}
 .nav-secondary address {
   font-size: 0.875em;
 }
@@ -203,20 +203,30 @@ a:hover {
 .menu-horizontal ul {
   color: #666;
   display: flex;
-  align-items: baseline;
   gap: 1rem;
+  align-items: center;
+}
+
+.search {
+  position: relative;
 }
 
 .search .prompt {
   display: flex;
   width: 12.5rem;
-  padding: 0.625rem 0.6875rem;
+  padding: 0.625rem 0.6875rem 0.625rem 2.5rem;
   align-items: center;
   gap: 0.6875rem;
   flex-shrink: 0;
 
   border-radius: 0.5rem;
   border: 1px solid #c1bdb9;
+}
+
+.glass-search {
+  position: absolute;
+  bottom: 0.65rem;
+  left: 0.6rem;
 }
 
 /* Hero styles */
@@ -242,6 +252,8 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  width: 50rem;
 }
 
 .hero--content .eyebrow {
@@ -409,6 +421,11 @@ a:hover {
 .card-news--content .date {
   display: block;
   margin-bottom: 1rem;
+}
+
+.card-news--content .button {
+  outline: none;
+  padding: 0;
 }
 
 /* Logos */

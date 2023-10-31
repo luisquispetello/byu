@@ -1,0 +1,66 @@
+.icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  border-radius: .5rem;
+}
+
+.light {
+  filter: brightness(6);
+}
+
+.md {
+  height: 32px;
+  width: 32px;
+}
+
+.lg {
+  height: 48px;
+  width: 48px;
+}
+
+.facebook {
+  background: url("../assets/icons/facebook.png") no-repeat;
+}
+.instagram {
+  background: url("../assets/icons/instagram.png") no-repeat;
+}
+.linkedin {
+  background: url("../assets/icons/linkedin.png") no-repeat;
+}
+.glass-search {
+  background: url("../assets/icons/magnifying-glass.png") no-repeat;
+}
+/* 
+.glass-search:before {
+  background-image: url('../assets/icons/magnifying-glass.png');
+  content: "";
+  width: 20px;
+  height: 20px;
+} */
+.right-arrow {
+  background: url("../assets/icons/right-arrow.svg") no-repeat;
+}
+
+.right-arrow-box {
+  background: #000 url("../assets/icons/right-arrow.svg") no-repeat center;
+  background-size: 60%;
+}
+
+.dg-arrow {
+  background: url("../assets/icons/arrow-tr.png") no-repeat;
+}
+.alumni {
+  background: url("../assets/icons/alumni.png") no-repeat;
+}
+.business {
+  background: url("../assets/icons/business.png") no-repeat;
+}
+.location {
+  background: url("../assets/icons/location.png") no-repeat;
+}
