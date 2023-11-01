@@ -42,6 +42,7 @@ img {
   border-radius: 3rem;
   font-weight: 700;
   border: 1px solid #000;
+  cursor: pointer;
 }
 
 .dark {
@@ -221,6 +222,11 @@ input, textarea {
   border-radius: 1rem;
   border: 1px solid #aaa;
   width: 100%;
+}
+
+#feedback {
+  margin: 2rem;
+  text-align: center;
 }
 
 /* Cards styles*/
