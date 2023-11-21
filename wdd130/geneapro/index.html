@@ -11,7 +11,7 @@
 
 <body>
   <div class="site-container">
-    <header class="site-header">
+    <header class="site-header container">
       <a href="index.html" class="logo-link">
         <img src="images/logo.png" alt="GeneaPro">
         <div>&nbsp;</div>
@@ -27,11 +27,11 @@
 
     <main>
       <div>
-        <div class="hero">
-          <section class="left">
-            <h1>Investigación genealógica y gestión documental</h1>
-            <h2>Genealogía, el camino para entender tu presente...</h2>
-            <div>
+        <div class="hero container">
+          <section class="hero-left">
+            <h1 class="eyebrow">Investigación genealógica y gestión documental</h1>
+            <h2 class="hero-title">Genealogía, el camino para entender tu presente...</h2>
+            <div class="hero-social-proof">
               Somos profesionales apasionados por la genealogía y la historia familiar. Más de 150 clientes han confiado en nosotros.
               <div>
                 <img src="images/social-proof.png" alt="">
@@ -39,83 +39,83 @@
             </div>
           </section>
 
-          <img src="images/home-1.png" alt="messenger">
+          <img src="images/hero-image.png" alt="messenger">
 
-          <section class="right">
+          <section class="hero-right">
             <h3>y conocer tu pasado.</h3>
             <p>¿Quiénes fueron tus antepasados? ¿Qué huellas dejaron en la historia? ¿Qué secretos guardan tus raíces? En Geneapro te ayudamos a responder estas preguntas. </p>
-            <button>Contacto</button>
+            <a class="button cta">Contacto</a>
           </section>
         </div>
+
+        <br><br>
       </div>
     </main>
 
-    <footer class="site-footer">
-      <div class="site-footer__title">Contact</div>
-      <div class="site-footer__content">
-        <section class="site-footer__content-left">
-          <p>En qué podemos ayudarte?</p>
-          <div>
-            <a href="emailto:hi@geaneapro.es">hi@geneapro.es</a>
-            <a href="tel:619919196">+34 619 91 91 96</a>
-            <address>Baskonia 7 <br> 48970 Basauri, Bizkaia</address>
-          </div>
-          <small>Información básica sobre protección de datos: Responsable: GeneaPro, SCCL. Finalidad: desarrollar su
-            actividad comercial y remitir comunicaciones comerciales a los usuarios (en caso que nos autoricen a ello)
-            Legitimación: Consentimiento del interesado. Destinatarios: GeneaPro y proveedores legitimados externos.
-            Derechos: Acceder, rectificar y suprimir los datos, así como otros derechos como se explica en la
-            información adicional. También se puede instar reclamación ante la Agencia Española de Protección de
-            Datos.
-          </small>
-        </section>
-        <section class="site-footer__content-right">
-          <form>
-            <label for="first-name">Nombre</label>
-            <input type="text" id="first-name" name="first-name" required>
-
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Tu mensaje</label>
-            <textarea cols="100" id="message" name="message" rows="6" required
-              placeholder="Cuentanos tu historia"></textarea>
-
+    <footer class="main-footer">
+      <div class="site-footer container">
+        <div class="site-footer__title">Contact</div>
+        <div class="site-footer__content">
+          <section class="site-footer__content-left">
+            <p>En qué podemos ayudarte?</p>
             <div>
-              <input type="checkbox" id="terms" name="terms" required>
-              <label for="terms">Acepto la política de privacidad</label>
+              <a href="emailto:hi@geaneapro.es">hi@geneapro.es</a>
+              <a href="tel:619919196">+34 619 91 91 96</a>
+              <address>Baskonia 7 <br> 48970 Basauri, Bizkaia</address>
             </div>
-
-            <button>Contactar</button>
-          </form>
-        </section>
+            <small>Información básica sobre protección de datos: Responsable: GeneaPro, SCCL. Finalidad: desarrollar su
+              actividad comercial y remitir comunicaciones comerciales a los usuarios (en caso que nos autoricen a ello)
+              Legitimación: Consentimiento del interesado. Destinatarios: GeneaPro y proveedores legitimados externos.
+              Derechos: Acceder, rectificar y suprimir los datos, así como otros derechos como se explica en la
+              información adicional. También se puede instar reclamación ante la Agencia Española de Protección de
+              Datos.
+            </small>
+          </section>
+          <section class="site-footer__content-right">
+            <form>
+              <label for="first-name">Nombre</label>
+              <input type="text" id="first-name" name="first-name" required>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+              <label for="message">Tu mensaje</label>
+              <textarea cols="100" id="message" name="message" rows="6" required
+                placeholder="Cuentanos tu historia"></textarea>
+              <div>
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">Acepto la política de privacidad</label>
+              </div>
+              <button>Contactar</button>
+            </form>
+          </section>
+        </div>
+        <aside class="site-footer__links">
+          <div class="site-footer__links-logos">
+            <img src="images/geneapro-logo.png" alt="GeneaPro logo">
+            <img src="images/apg-logo.png" alt="apg member logo">
+          </div>
+          <div class="site-footer__links-menu">
+            <nav>
+              <a href="#">Aviso Legal</a>
+              <a href="#">Política de privacidad</a>
+              <a href="#">Política de cookies</a>
+              <a href="site-plan.html">Site plan</a>
+            </nav>
+            <nav>
+              <a href="#">Trabajos</a>
+              <a href="#">Procesos</a>
+              <a href="#">Testimonios</a>
+              <a href="#">Nosotros</a>
+            </nav>
+            <nav>
+              <a href="#">Linkedin</a>
+              <a href="#">Instagram</a>
+              <a href="#">Facebook</a>
+              <a href="#">Youtube</a>
+            </nav>
+          </div>
+        </aside>
+        <small>© 2023 GENEAPRO - Hecho por luisquispetello</small>
       </div>
-      <aside class="site-footer__links">
-        <div class="site-footer__links-logos">
-          <img src="images/geneapro-logo.png" alt="GeneaPro logo">
-          <img src="images/apg-logo.png" alt="apg member logo">
-        </div>
-        <div class="site-footer__links-menu">
-          <nav>
-            <a href="#">Aviso Legal</a>
-            <a href="#">Política de privacidad</a>
-            <a href="#">Política de cookies</a>
-            <a href="site-plan.html">Site plan</a>
-          </nav>
-          <nav>
-            <a href="#">Trabajos</a>
-            <a href="#">Procesos</a>
-            <a href="#">Testimonios</a>
-            <a href="#">Nosotros</a>
-          </nav>
-          <nav>
-            <a href="#">Linkedin</a>
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
-            <a href="#">Youtube</a>
-          </nav>
-        </div>
-      </aside>
-      <small>© 2023 GENEAPRO - Hecho por luisquispetello</small>
     </footer>
   </div>
 </body>

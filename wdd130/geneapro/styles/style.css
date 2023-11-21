@@ -94,7 +94,7 @@ h6 {
   font-style: normal;
   font-weight: 700;
   line-height: 110%; /* 4.95rem */
-  letter-spacing: -0.045rem;
+  letter-spacing: -0.03rem;
 }
 
 h1 {
@@ -114,6 +114,7 @@ h2 {
   line-height: 130%; /* 1.4625rem */
   letter-spacing: -0.01125rem;
   text-transform: uppercase;
+  margin-top: 0;
 }
 
 a {
@@ -154,16 +155,20 @@ textarea {
   resize: none;
 }
 
-button {
+button,
+.button {
   background-color: #000;
   color: #fff;
   border: 0;
   padding: 1.12rem 2rem;
   border-radius: 0.5rem;
+  font-family: Recia Variable;
+  font-size: 1.5rem;
 }
 
 .container {
-  max-width: 90rem;
+  max-width: 77.5rem;
+  margin: 2rem auto;
 }
 
 .site-container {
@@ -173,11 +178,12 @@ button {
 /* Header styles */
 
 .site-header {
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 6.25rem;
+  margin: 0 auto;
 }
 
 .logo-link {
@@ -200,15 +206,74 @@ button {
 
 /* Hero styles */
 
+.hero {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.hero-left {
+  display: flex;
+  width: 31.25rem;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+.hero-social-proof {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 130%; /* 1.1375rem */
+}
+
+.hero-social-proof img {
+  padding-top: 1rem;
+  
+}
+
+.hero-right {
+  display: flex;
+  width: 22.5rem;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+  align-self: stretch;
+  font-size: 1.5rem;
+}
+
+.hero-right h3 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.cta {
+  margin-top: auto;
+}
+
+.hero-title {
+  color: #000;
+  font-family: Recia Variable;
+  font-size: 4.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%; /* 4.95rem */
+  letter-spacing: -0.045rem;
+  margin: 0;
+  padding-bottom: 2rem;
+}
+
 /* Footer style */
-.site-footer {
+.main-footer {
   padding: 2em 3em;
   margin-top: 0;
   color: #999;
   background-color: #000;
   text-align: center;
   border-radius: 1.25rem 1.25rem 0rem 0rem;
+}
 
+.site-footer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -250,7 +315,6 @@ button {
   gap: 3rem;
   text-align: left;
   width: 40rem;
-  
 }
 
 .site-footer__content-left p {
@@ -277,10 +341,9 @@ button {
 .site-footer__links-menu {
   display: flex;
   gap: 5rem;
-  
 }
 
-.site-footer__links-menu nav{
+.site-footer__links-menu nav {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
