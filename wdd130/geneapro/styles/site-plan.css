@@ -8,25 +8,25 @@ Fonts are separated by a & */
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #4C5454;
+  --primary-color: #000;
   --secondary-color: #fff;
-  --accent1-color: #523F38;
-  --accent2-color: #1EA896;
+  --accent1-color: #000;
+  --accent2-color: #fff;
 
   /* change the values below to your chosen font(s) */
   --heading-font: 'Recia', sans-serif;
   --paragraph-font: 'Supreme', sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #523F38;  /* headlines on a white background */ 
+  --headline-color-on-white: #000;  /* headlines on a white background */ 
   --headline-color-on-color: white; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #523F38; /* paragraph text on a white background */ 
+  --paragraph-color-on-white: #000; /* paragraph text on a white background */ 
   --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #523F38  ;
-  --nav-link-color: #523F38;
-  --nav-background-color: #1EA896;
+  --paragraph-background-color: #000  ;
+  --nav-link-color: #000;
+  --nav-background-color: #fff;
   --nav-hover-link-color: white;
-  --nav-hover-background-color: #523F38;
+  --nav-hover-background-color: #000;
 }
 
 

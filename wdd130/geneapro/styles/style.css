@@ -71,6 +71,7 @@ img.full-width {
 
 img {
   height: fit-content;
+  width: fit-content;
 }
 
 /* general styles */
@@ -114,7 +115,7 @@ h2 {
   line-height: 130%; /* 1.4625rem */
   letter-spacing: -0.01125rem;
   text-transform: uppercase;
-  margin-top: 0;
+  margin-top: -5px;
 }
 
 a {
@@ -164,15 +165,50 @@ button,
   border-radius: 0.5rem;
   font-family: Recia Variable;
   font-size: 1.5rem;
+
+  cursor: pointer;
+}
+
+.secondary-button {
+  background-color: transparent;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.tertiary-button {
+  background-color: transparent;
+  color: #000;
+  font-family: Supreme Variable;
+  padding: 0;
 }
 
 .container {
   max-width: 77.5rem;
-  margin: 2rem auto;
+  margin: 0 auto;
+  padding: 4.5rem 0;
 }
 
 .site-container {
   margin: 0 auto;
+}
+
+.site-content {
+  display: flex;
+  flex-direction: column;
+  gap: 7.5rem;
+}
+
+.site-title {
+  margin: 0;
+}
+
+.after-title {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: Recia Variable;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 2.6rem */
 }
 
 /* Header styles */
@@ -184,6 +220,7 @@ button,
   width: 100%;
   height: 6.25rem;
   margin: 0 auto;
+  padding: 0;
 }
 
 .logo-link {
@@ -225,11 +262,13 @@ button,
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 130%; /* 1.1375rem */
+
+  display: flex;
+  flex-direction: column;
 }
 
 .hero-social-proof img {
-  padding-top: 1rem;
-  
+  padding-top: 0.9rem;
 }
 
 .hero-right {
@@ -263,6 +302,135 @@ button,
   padding-bottom: 2rem;
 }
 
+.home__about-us {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.home__about-us div h2 {
+  margin: 0;
+}
+
+.card .big-number {
+  font-size: 10rem;
+  font-weight: bold;
+}
+
+/* TESTIOMONIO */
+
+.full-testimonio-box {
+  display: flex;
+  align-items: center;
+  gap: 7.5rem;
+}
+
+.full-testimonio-box section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.author-box {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  align-self: stretch;
+}
+
+.author-box__name {
+  display: flex;
+  flex-direction: column;
+}
+
+.author-box__name div {
+  display: flex;
+  gap: 1rem;
+  font-weight: bold;
+}
+
+.testimonio-box__content {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: Recia Variable;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 2.6rem */
+}
+
+.testimonio-box__content::before {
+  content: "";
+  margin-right: -0.9rem;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5rem;
+}
+
+/* PROCESS */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "title-grid card-1 card-2"
+    "space card-3 card-4";
+  gap: 3rem;
+
+  margin: 0 auto;
+  /* width: 90%; */
+}
+
+.grid h2 {
+  color: #000;
+  font-family: Supreme Variable;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 1.4625rem */
+  text-transform: uppercase;
+  grid-area: "title-grid";
+}
+
+.grid div:nth-child(2) {
+  grid-area: card-1;
+}
+.grid div:nth-child(3) {
+  grid-area: card-2;
+}
+.grid div:nth-child(4) {
+  grid-area: card-3;
+}
+.grid div:nth-child(5) {
+  grid-area: card-4;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card span {
+  color: rgba(0, 0, 0, 0.8);
+  font-feature-settings: "case" on;
+  font-family: Recia Variable;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 130%; /* 5.2rem */
+}
+
+.card h3 {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: Supreme Variable;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 2.6rem */
+  margin: 0;
+}
+
 /* Footer style */
 .main-footer {
   padding: 2em 3em;
@@ -276,9 +444,9 @@ button,
 .site-footer {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
-  gap: 5rem;
+  gap: 8rem;
 }
 
 .site-footer__title {
@@ -325,6 +493,13 @@ button,
   line-height: 110%; /* 4.95rem */
   letter-spacing: -0.045rem;
   margin: 0;
+}
+
+.site-footer__content-left div {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .site-footer__links {
