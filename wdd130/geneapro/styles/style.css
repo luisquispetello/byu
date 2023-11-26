@@ -171,15 +171,20 @@ button,
 
 .secondary-button {
   background-color: transparent;
+  font-size: 1.125rem;
   color: #000;
   border: 1px solid #000;
+  font-weight: 700;
 }
 
 .tertiary-button {
   background-color: transparent;
+  font-size: 1.125rem;
   color: #000;
   font-family: Supreme Variable;
+  text-transform: uppercase;
   padding: 0;
+  font-weight: 700;
 }
 
 .container {
@@ -355,6 +360,11 @@ button,
   font-style: normal;
   font-weight: 600;
   line-height: 130%; /* 2.6rem */
+}
+
+.big-font{
+  font-size: 4rem;
+  font-weight: 400;
 }
 
 .testimonio-box__content::before {
