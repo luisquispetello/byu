@@ -1,3 +1,6 @@
+@import url('supreme.css');
+@import url('recia.css');
+
 .content-grid {
   --padding-inline: 1rem;
   --content-max-width: 900px;
